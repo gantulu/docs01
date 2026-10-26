@@ -1,90 +1,78 @@
-# Source References — Duitku POP
+# Source — Dokumentasi Duitku POP
 
-Dokumen ini mencatat sumber resmi yang digunakan untuk menyusun dan memelihara `duitku-pop.md` di repository ini.
+Dokumen ini mengelompokkan referensi resmi Duitku POP sesuai bagian dokumentasi yang digunakan untuk menyusun dan memelihara [`duitku-pop.md`](./duitku-pop.md).
 
-- **Penyedia dokumentasi:** Duitku
+- **Penyedia:** Duitku
 - **Produk:** Duitku POP
 - **Bahasa:** Indonesia
-- **Sumber utama:** https://docs.duitku.com/pop/id/
-- **Tanggal pemeriksaan sumber:** 27 Oktober 2026
-- **Jenis sumber:** Dokumentasi teknis resmi pihak penyedia
-- **Dokumen terkait:** [duitku-pop.md](./duitku-pop.md)
+- **Source of truth:** https://docs.duitku.com/pop/id/
+- **Tanggal pemeriksaan:** 27 Oktober 2026
 
-## 1. Sumber Utama
+## 1. Pendahuluan
 
-| Sumber | URL | Cakupan |
-| --- | --- | --- |
-| Dokumentasi Duitku POP | https://docs.duitku.com/pop/id/ | Halaman referensi utama, navigasi, seluruh bagian dokumentasi, dan changelog. |
+Referensi untuk pengenalan produk, gambaran alur, persiapan integrasi, kompatibilitas browser, dan library.
 
-## 2. Referensi Bagian yang Diminta
+| Bagian | URL |
+| --- | --- |
+| Pendahuluan | https://docs.duitku.com/pop/id/#pendahuluan |
+| Pratinjau | https://docs.duitku.com/pop/id/#pratinjau |
+| Langkah Integrasi | https://docs.duitku.com/pop/id/#langkah-integrasi |
+| Flowchart | https://docs.duitku.com/pop/id/#flowchart |
+| Browser yang Kompatibel | https://docs.duitku.com/pop/id/#browser-yang-kompatibel |
+| Library | https://docs.duitku.com/pop/id/#library |
 
-Daftar berikut mempertahankan URL bagian (anchor) yang diberikan untuk memudahkan penelusuran ke sumber aslinya.
+## 2. Integrasi Backend atau Server
 
-### Pengantar dan persiapan
+Referensi untuk API server, pembuatan invoice, struktur objek JSON, dan callback server-to-server.
 
-| Bagian | URL | Penggunaan |
-| --- | --- | --- |
-| Pendahuluan | https://docs.duitku.com/pop/id/#pendahuluan | Gambaran umum Duitku POP. |
-| Pratinjau | https://docs.duitku.com/pop/id/#pratinjau | Alur pembayaran tingkat tinggi. |
-| Langkah Integrasi | https://docs.duitku.com/pop/id/#langkah-integrasi | Persiapan dan kredensial merchant. |
-| Flowchart | https://docs.duitku.com/pop/id/#flowchart | Diagram alur invoice, payment page, pembayaran, dan callback. |
-| Browser yang Kompatibel | https://docs.duitku.com/pop/id/#browser-yang-kompatibel | Kompatibilitas browser yang dicantumkan provider. |
-| Library | https://docs.duitku.com/pop/id/#library | Library integrasi yang tersedia. |
+| Bagian | URL |
+| --- | --- |
+| Integrasi Backend atau Server | https://docs.duitku.com/pop/id/#integrasi-backend-atau-server |
+| Create Invoice | https://docs.duitku.com/pop/id/#create-invoice |
+| Obyek JSON | https://docs.duitku.com/pop/id/#obyek-json |
+| Callback | https://docs.duitku.com/pop/id/#callback |
 
-### Integrasi backend/server
+## 3. Integrasi Frontend atau View
 
-| Bagian | URL | Penggunaan |
-| --- | --- | --- |
-| Integrasi Backend atau Server | https://docs.duitku.com/pop/id/#integrasi-backend-atau-server | Ikhtisar pemanggilan API backend. |
-| Create Invoice | https://docs.duitku.com/pop/id/#create-invoice | Endpoint, header, signature, parameter request, respons, dan aturan order ID. |
-| Obyek JSON | https://docs.duitku.com/pop/id/#obyek-json | Skema `itemDetails`, `customerDetail`, `Address`, dan `creditCardDetail`. |
-| Callback | https://docs.duitku.com/pop/id/#callback | Format callback, parameter, signature, persyaratan endpoint, dan retry callback. |
+Referensi untuk pemuatan library frontend, integrasi Duitku JS, callback JavaScript, dan pengalihan browser.
 
-### Integrasi frontend/view
+| Bagian | URL |
+| --- | --- |
+| Integrasi Frontend atau View | https://docs.duitku.com/pop/id/#integrasi-frontend-atau-view |
+| Tinjauan Umum | https://docs.duitku.com/pop/id/#tinjauan-umum |
+| Duitku JS | https://docs.duitku.com/pop/id/#duitku-js |
+| JS Callback | https://docs.duitku.com/pop/id/#js-callback |
+| Window Redirection | https://docs.duitku.com/pop/id/#window-redirection |
+| Redirect | https://docs.duitku.com/pop/id/#redirect |
 
-| Bagian | URL | Penggunaan |
-| --- | --- | --- |
-| Integrasi Frontend atau View | https://docs.duitku.com/pop/id/#integrasi-frontend-atau-view | Ikhtisar tampilan halaman pembayaran. |
-| Tinjauan Umum | https://docs.duitku.com/pop/id/#tinjauan-umum | Pemuatan library frontend dan penggunaan reference. |
-| Duitku JS | https://docs.duitku.com/pop/id/#duitku-js | Pemanggilan `checkout.process` dan opsi event. |
-| JS Callback | https://docs.duitku.com/pop/id/#js-callback | Format respons callback JavaScript dan batas penggunaannya. |
-| Window Redirection | https://docs.duitku.com/pop/id/#window-redirection | Redirect pelanggan ke `paymentUrl`. |
-| Redirect | https://docs.duitku.com/pop/id/#redirect | Parameter return URL dan peringatan agar tidak menjadikan parameter redirect sebagai sumber status final. |
+## 4. Payment Method
 
-### Metode pembayaran dan error
+Referensi metode pembayaran dan kode kanal yang didukung menurut dokumentasi Duitku.
 
-| Bagian | URL | Penggunaan |
-| --- | --- | --- |
-| Payment Method | https://docs.duitku.com/pop/id/#payment-method | Kode kanal pembayaran dan persyaratan parameter per kanal. |
-| Errors | https://docs.duitku.com/pop/id/#errors | Indeks referensi error. |
-| Respon HTTP | https://docs.duitku.com/pop/id/#respon-http | Kode HTTP dan pesan error API. |
-| Respon API | https://docs.duitku.com/pop/id/#respon-api | Kode hasil callback dan redirect menurut dokumentasi. |
+| Bagian | URL |
+| --- | --- |
+| Payment Method | https://docs.duitku.com/pop/id/#payment-method |
 
-## 3. Aturan Penggunaan Sumber
+## 5. Errors
 
-1. **Dokumentasi resmi Duitku adalah source of truth** untuk kontrak provider, endpoint, parameter, signature, kode respons, callback, dan metode pembayaran.
-2. `duitku-pop.md` adalah rangkuman kerja untuk memudahkan pembacaan, bukan pengganti dokumentasi asli dan bukan salinan lengkapnya.
-3. Jangan mengasumsikan bahwa contoh request, nilai contoh, kode kanal, daftar IP, batas parameter, atau kredensial uji selalu mutakhir. Periksa sumber resmi sebelum digunakan.
-4. Bedakan respons callback server-to-server dari callback JavaScript dan redirect browser. Dokumentasi Duitku memperingatkan bahwa parameter redirect dapat diubah pelanggan; jangan menggunakannya sendiri untuk menetapkan status pembayaran.
-5. Jika ada kontradiksi, istilah yang ambigu, atau status yang belum pasti, catat sebagai blocker dan minta konfirmasi resmi Duitku sebelum menetapkan kontrak implementasi.
-6. Jangan menyimpan Merchant Key/API Key asli di dokumen sumber, kode frontend, commit, atau log.
-7. Untuk perubahan kontrak, catat tanggal pemeriksaan, bagian yang berubah, dampak implementasi, dan tautan sumber terkait.
+Referensi untuk memahami respons HTTP dan kode respons API Duitku.
 
-## 4. Pemeriksaan yang Disarankan Sebelum Implementasi
+| Bagian | URL |
+| --- | --- |
+| Errors | https://docs.duitku.com/pop/id/#errors |
+| Respon HTTP | https://docs.duitku.com/pop/id/#respon-http |
+| Respon API | https://docs.duitku.com/pop/id/#respon-api |
 
-- [ ] Pastikan endpoint Sandbox dan Production sesuai dokumentasi saat ini.
-- [ ] Verifikasi formula signature Create Invoice dan callback secara terpisah.
-- [ ] Verifikasi parameter wajib, tipe data, batas panjang, serta relasi nominal `paymentAmount` dan `itemDetails`.
-- [ ] Verifikasi kode hasil callback dan redirect secara terpisah; jangan menyamakan keduanya tanpa dasar resmi.
-- [ ] Verifikasi aturan callback, format content type, respons HTTP 200, dan kebijakan pengiriman ulang.
-- [ ] Verifikasi ketersediaan payment method untuk merchant dan lingkungan yang digunakan.
-- [ ] Jalankan pengujian Sandbox sebelum mengaktifkan Production.
+## Aturan Penggunaan Sumber
 
-## 5. Catatan Pemeliharaan
+1. Dokumentasi resmi Duitku adalah **source of truth** untuk endpoint, parameter, signature, callback, metode pembayaran, dan kode respons.
+2. Gunakan bagian yang relevan di atas untuk menelusuri informasi ke sumber asli. Ringkasan repository tidak menggantikan dokumentasi resmi.
+3. Jangan mengasumsikan contoh, batas parameter, kode kanal, daftar IP, atau kredensial uji selalu mutakhir. Verifikasi kembali sebelum implementasi.
+4. Bedakan callback server-to-server, callback JavaScript, dan redirect browser. Jangan menetapkan status pembayaran final hanya dari parameter redirect.
+5. Jika dokumentasi bertentangan atau arti suatu kode belum pasti, catat sebagai blocker dan minta konfirmasi resmi Duitku sebelum mengunci kontrak implementasi.
+6. Jangan menyimpan API Key atau Merchant Key asli di file dokumentasi, frontend, commit, atau log.
 
-Halaman resmi dapat berubah tanpa perubahan pada file lokal ini. Karena itu, tautan di atas harus dibuka kembali saat melakukan audit atau memperbarui `duitku-pop.md`. Tanggal pemeriksaan menunjukkan kapan sumber ditinjau untuk pekerjaan ini, bukan jaminan bahwa setiap bagian akan tetap sama setelah tanggal tersebut.
+## Dokumen Terkait
 
-## 6. Referensi
-
-- [Duitku POP — Dokumentasi resmi Bahasa Indonesia](https://docs.duitku.com/pop/id/)
-- [Dokumentasi ringkasan repository](./duitku-pop.md)
+- [Dokumentasi teknis ringkasan Duitku POP](./duitku-pop.md)
+- [Dokumentasi resmi Duitku POP](https://docs.duitku.com/pop/id/)
